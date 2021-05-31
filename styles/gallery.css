@@ -24,19 +24,26 @@ header, section {
 
 header {
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-image: url("https://chaosspam.github.io/gallery/images/art/20210514_SummerFleur.png");
   color: #eee;
 }
+/*
+header p span {
+  padding: 0 5px;
+  background-color: #5f689999;
+}*/
 
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.6;
   margin-top: 0;
   margin-bottom: 3%;
 }
 
 li {
-  font-size: 1.5em;
+  font-size: 1em;
+  line-height: 2;
 }
 
 footer {
@@ -64,8 +71,17 @@ a:visited {
 }
 
 /*Button links*/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  height: 100%;
+  min-height: 10vh;
+}
+
+
 .button {
-  background-color: #82b4ff;
+  background-color: #5e97aa;
   border-radius: 3px;
   display: inline-block;
   margin: 0 2% 0 0;
@@ -74,13 +90,13 @@ a:visited {
 .button a:link, .button a:visited {
   color: white;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 8px 40px;
   text-align: center;
 }
 
 .button:hover {
-  background-color: #3c8aff;
+  background-color: #82b4ff;
 }
 
 
@@ -159,13 +175,18 @@ hr {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 3em;
-    }
+  h1 {
+      font-size: 3em;
+  }
 
-    h2 {
-        font-size: 1.5em;
-    }
+  h2 {
+      font-size: 1.5em;
+  }
+
+  .button a:link, .button a:visited {
+    font-size: 1.2em;
+    padding: 2px 10px;
+  }
 
 	.galleryHalf {
 		margin: 20px 0;
@@ -174,9 +195,10 @@ hr {
 
 /* Large devices (1920px and up) */
 @media (min-width: 1920px) {
-    header p {
-        font-size: 2em;
-    }
+  header p {
+      font-size: 2em;
+  }
+
 	.galleryHalf {
 	  margin: 0.5em 75px;
 	}
@@ -185,9 +207,9 @@ hr {
 /* Enden's notebook */
 @media (min-width: 2880px) {
 
-    h2 {
-        font-size: 2em;
-    }
+  h2 {
+      font-size: 2em;
+  }
 
 	.galleryHalf {
 	  margin: 0.5em 75px;
